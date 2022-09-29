@@ -1,0 +1,7 @@
+class ContainIntroduction  {
+
+String contain="\n\n1.INTRODUÇÃO\n\n""  O Atlas Climático do Estado do Paraná é uma publicação de atualização das normais climatológicas de diversos elementos meteorológicos. Foram utilizados banco de dados de estações meteorológicas e pluviométricas do Instituto Agronômico do Paraná - IAPAR, do Sistema Meteorológico do Paraná - SIMEPAR e do Instituto das Águas do Paraná. Após georreferenciamento dessas estações foram gerados 188 mapas com as principais características climáticas do Paraná, dentre elas: precipitação, temperatura do ar, umidade relativa do ar, evapotranspiração potencial, diferença entre precipitação e evapotranspiração potencial, radiação solar global, insolação e da classificação climática segundo Köppen.\n"
+    " É de suma importância o conhecimento das características climáticas de determinada região, pois essas podem expressar o seu potencial produtivo. O clima é considerado o fator de maior relevância para as atividades agropecuárias, sendo sua variabilidade o maior causador de sucesso ou fracasso das safras, na produção animal, nas oscilações dos preços do mercado e, consequentemente, das tomadas de decisões de toda a cadeia produtiva.\n"
+    " Sendo assim, espera-se que essa publicação forneça ao Estado do Paraná dados climáticos de forma que o setor agropecuário se torne mais lucrativo, mais respeitoso com o meio ambiente e mais justo socialmente, ou seja, mais sustentável.\n\n";
+
+}

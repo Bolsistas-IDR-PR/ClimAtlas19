@@ -1,0 +1,16 @@
+# flutter_native_splash-production.yaml
+flutter_native_splash:
+  color: "#ffffff"
+  image: images/idr_logo_png.png
+  color_dark: "#121212"
+  image_dark: images/idr_logo_png.png
+
+
+  android_12:
+    image: images/idr_logo_png.png
+    icon_background_color: "#ffffff"
+    image_dark: images/idr_logo_png.png
+    icon_background_color_dark: "#121212"
+
+  web: false
+  ios: true

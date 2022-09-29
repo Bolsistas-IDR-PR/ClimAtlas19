@@ -1,0 +1,341 @@
+name: climatlas19
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.5
+
+
+
+  # image carousel slider
+  carousel_slider: ^4.1.1
+
+  #dots indicator
+  smooth_page_indicator: ^1.0.0+2
+
+  #gallery images
+  photo_view: ^0.14.0
+
+  #dio-download file
+  dio: ^4.0.0
+
+  #open file
+  open_file: ^3.2.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: "^0.10.0"
+
+#flutter_icons:
+#  android: true
+#  ios: true
+#  remove_alpha_ios: true
+#  image_path: "assets/app_logo.png"
+#  min_sdk_android: 21 # android min sdk min:16, default 21
+#  web:
+#    generate: true
+#    image_path: "assets/app_logo.png"
+#    background_color: "#hexcode"
+#    theme_color: "#hexcode"
+#  windows:
+#    generate: true
+#    image_path: "assets/app_logo.png"
+#    icon_size: 48 # min:48, max:256, default: 48
+
+
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+  flutter_native_splash: ^2.2.8
+flutter_native_splash:
+    image: images/idr_logo_png.png
+    color: "#fafafa"
+    android: true
+    ios: true
+    web: true
+
+
+
+
+
+
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/icon_jpg_2.jpg
+    - images/icon_youtube.png
+    - images/idr_logo.jpg
+    - images/classificacao_climatica_mapa/classificacao_climatica_mapa.jpg
+    - images/Figura01.jpg
+    - images/mapas/estacoes_iapar/fig_01.jpg
+    - images/mapas/estacoes_aguas/fig_02.jpg
+    - images/mapas/Figura01/Figura01_page-0001.jpg
+    - images/mapas/Figura02/Figura02_page-0001.jpg
+    - images/mapas/Figura03/Figura03_page-0001.jpg
+    - images/mapas/Figura04/Figura04_page-0001.jpg
+    - images/mapas/Figura05/Figura05_page-0001.jpg
+    - images/mapas/Figura06/Figura06_page-0001.jpg
+    - images/mapas/Figura07/Figura07_page-0001.jpg
+    - images/mapas/Figura08/Figura08_page-0001.jpg
+    - images/mapas/Figura09/Figura09_page-0001.jpg
+    - images/mapas/Figura10/Figura10_page-0001.jpg
+    - images/mapas/Figura11/Figura11_page-0001.jpg
+    - images/mapas/Figura12/Figura12_page-0001.jpg
+    - images/mapas/Figura13/Figura13_page-0001.jpg
+    - images/mapas/Figura14/Figura14_page-0001.jpg
+    - images/mapas/Figura15/Figura15_page-0001.jpg
+    - images/mapas/Figura16/Figura16_page-0001.jpg
+    - images/mapas/Figura17/Figura17_page-0001.jpg
+    - images/mapas/Figura18/Figura18_page-0001.jpg
+    - images/mapas/Figura19/Figura19_page-0001.jpg
+    - images/mapas/Figura20/Figura20_page-0001.jpg
+    - images/mapas/Figura21/Figura21_page-0001.jpg
+    - images/mapas/Figura22/Figura22_page-0001.jpg
+    - images/mapas/Figura23/Figura23_page-0001.jpg
+    - images/mapas/Figura24/Figura24_page-0001.jpg
+    - images/mapas/Figura25/Figura25_page-0001.jpg
+    - images/mapas/Figura26/Figura26_page-0001.jpg
+    - images/mapas/Figura27/Figura27_page-0001.jpg
+    - images/mapas/Figura28/Figura28_page-0001.jpg
+    - images/mapas/Figura29/Figura29_page-0001.jpg
+    - images/mapas/Figura30/Figura30_page-0001.jpg
+    - images/mapas/Figura31/Figura31_page-0001.jpg
+    - images/mapas/Figura32/Figura32_page-0001.jpg
+    - images/mapas/Figura33/Figura33_page-0001.jpg
+    - images/mapas/Figura34/Figura34_page-0001.jpg
+    - images/mapas/Figura35/Figura35_page-0001.jpg
+    - images/mapas/Figura36/Figura36_page-0001.jpg
+    - images/mapas/Figura37/Figura37_page-0001.jpg
+    - images/mapas/Figura38/Figura38_page-0001.jpg
+    - images/mapas/Figura39/Figura39_page-0001.jpg
+    - images/mapas/Figura40/Figura40_page-0001.jpg
+    - images/mapas/Figura41/Figura41_page-0001.jpg
+    - images/mapas/Figura42/Figura42_page-0001.jpg
+    - images/mapas/Figura43/Figura43_page-0001.jpg
+    - images/mapas/Figura44/Figura44_page-0001.jpg
+    - images/mapas/Figura45/Figura45_page-0001.jpg
+    - images/mapas/Figura46/Figura46_page-0001.jpg
+    - images/mapas/Figura47/Figura47_page-0001.jpg
+    - images/mapas/Figura48/Figura48_page-0001.jpg
+    - images/mapas/Figura49/Figura49_page-0001.jpg
+    - images/mapas/Figura50/Figura50_page-0001.jpg
+    - images/mapas/Figura51/Figura51_page-0001.jpg
+    - images/mapas/Figura52/Figura52_page-0001.jpg
+    - images/mapas/Figura53/Figura53_page-0001.jpg
+    - images/mapas/Figura54/Figura54_page-0001.jpg
+    - images/mapas/Figura55/Figura55_page-0001.jpg
+    - images/mapas/Figura56/Figura56_page-0001.jpg
+    - images/mapas/Figura57/Figura57_page-0001.jpg
+    - images/mapas/Figura58/Figura58_page-0001.jpg
+    - images/mapas/Figura59/Figura59_page-0001.jpg
+    - images/mapas/Figura60/Figura60_page-0001.jpg
+    - images/mapas/Figura61/Figura61_page-0001.jpg
+    - images/mapas/Figura62/Figura62_page-0001.jpg
+    - images/mapas/Figura63/Figura63_page-0001.jpg
+    - images/mapas/Figura64/Figura64_page-0001.jpg
+    - images/mapas/Figura65/Figura65_page-0001.jpg
+    - images/mapas/Figura66/Figura66_page-0001.jpg
+    - images/mapas/Figura67/Figura67_page-0001.jpg
+    - images/mapas/Figura68/Figura68_page-0001.jpg
+    - images/mapas/Figura69/Figura69_page-0001.jpg
+    - images/mapas/Figura70/Figura70_page-0001.jpg
+    - images/mapas/Figura71/Figura71_page-0001.jpg
+    - images/mapas/Figura72/Figura72_page-0001.jpg
+    - images/mapas/Figura73/Figura73_page-0001.jpg
+    - images/mapas/Figura74/Figura74_page-0001.jpg
+    - images/mapas/Figura75/Figura75_page-0001.jpg
+    - images/mapas/Figura76/Figura76_page-0001.jpg
+    - images/mapas/Figura77/Figura77_page-0001.jpg
+    - images/mapas/Figura78/Figura78_page-0001.jpg
+    - images/mapas/Figura79/Figura79_page-0001.jpg
+    - images/mapas/Figura80/Figura80_page-0001.jpg
+    - images/mapas/Figura81/Figura81_page-0001.jpg
+    - images/mapas/Figura82/Figura82_page-0001.jpg
+    - images/mapas/Figura83/Figura83_page-0001.jpg
+    - images/mapas/Figura84/Figura84_page-0001.jpg
+    - images/mapas/Figura85/Figura85_page-0001.jpg
+    - images/mapas/Figura86/Figura86_page-0001.jpg
+    - images/mapas/Figura87/Figura87_page-0001.jpg
+    - images/mapas/Figura88/Figura88_page-0001.jpg
+    - images/mapas/Figura89/Figura89_page-0001.jpg
+    - images/mapas/Figura90/Figura90_page-0001.jpg
+    - images/mapas/Figura91/Figura91_page-0001.jpg
+    - images/mapas/Figura92/Figura92_page-0001.jpg
+    - images/mapas/Figura93/Figura93_page-0001.jpg
+    - images/mapas/Figura94/Figura94_page-0001.jpg
+    - images/mapas/Figura95/Figura95_page-0001.jpg
+    - images/mapas/Figura96/Figura96_page-0001.jpg
+    - images/mapas/Figura97/Figura97_page-0001.jpg
+    - images/mapas/Figura98/Figura98_page-0001.jpg
+    - images/mapas/Figura99/Figura99_page-0001.jpg
+    - images/mapas/Figura100/Figura100_page-0001.jpg
+    - images/mapas/Figura101/Figura101_page-0001.jpg
+    - images/mapas/Figura102/Figura102_page-0001.jpg
+    - images/mapas/Figura103/Figura103_page-0001.jpg
+    - images/mapas/Figura104/Figura104_page-0001.jpg
+    - images/mapas/Figura105/Figura105_page-0001.jpg
+    - images/mapas/Figura106/Figura106_page-0001.jpg
+    - images/mapas/Figura107/Figura107_page-0001.jpg
+    - images/mapas/Figura108/Figura108_page-0001.jpg
+    - images/mapas/Figura109/Figura109_page-0001.jpg
+    - images/mapas/Figura110/Figura110_page-0001.jpg
+    - images/mapas/Figura111/Figura111_page-0001.jpg
+    - images/mapas/Figura112/Figura112_page-0001.jpg
+    - images/mapas/Figura113/Figura113_page-0001.jpg
+    - images/mapas/Figura114/Figura114_page-0001.jpg
+    - images/mapas/Figura115/Figura115_page-0001.jpg
+    - images/mapas/Figura116/Figura116_page-0001.jpg
+    - images/mapas/Figura117/Figura117_page-0001.jpg
+    - images/mapas/Figura118/Figura118_page-0001.jpg
+    - images/mapas/Figura119/Figura119_page-0001.jpg
+    - images/mapas/Figura120/Figura120_page-0001.jpg
+    - images/mapas/Figura121/Figura121_page-0001.jpg
+    - images/mapas/Figura122/Figura122_page-0001.jpg
+    - images/mapas/Figura123/Figura123_page-0001.jpg
+    - images/mapas/Figura124/Figura124_page-0001.jpg
+    - images/mapas/Figura125/Figura125_page-0001.jpg
+    - images/mapas/Figura126/Figura126_page-0001.jpg
+    - images/mapas/Figura127/Figura127_page-0001.jpg
+    - images/mapas/Figura128/Figura128_page-0001.jpg
+    - images/mapas/Figura129/Figura129_page-0001.jpg
+    - images/mapas/Figura130/Figura130_page-0001.jpg
+    - images/mapas/Figura131/Figura131_page-0001.jpg
+    - images/mapas/Figura132/Figura132_page-0001.jpg
+    - images/mapas/Figura133/Figura133_page-0001.jpg
+    - images/mapas/Figura134/Figura134_page-0001.jpg
+    - images/mapas/Figura135/Figura135_page-0001.jpg
+    - images/mapas/Figura136/Figura136_page-0001.jpg
+    - images/mapas/Figura137/Figura137_page-0001.jpg
+    - images/mapas/Figura138/Figura138_page-0001.jpg
+    - images/mapas/Figura139/Figura139_page-0001.jpg
+    - images/mapas/Figura140/Figura140_page-0001.jpg
+    - images/mapas/Figura141/Figura141_page-0001.jpg
+    - images/mapas/Figura142/Figura142_page-0001.jpg
+    - images/mapas/Figura143/Figura143_page-0001.jpg
+    - images/mapas/Figura144/Figura144_page-0001.jpg
+    - images/mapas/Figura145/Figura145_page-0001.jpg
+    - images/mapas/Figura146/Figura146_page-0001.jpg
+    - images/mapas/Figura147/Figura147_page-0001.jpg
+    - images/mapas/Figura148/Figura148_page-0001.jpg
+    - images/mapas/Figura149/Figura149_page-0001.jpg
+    - images/mapas/Figura150/Figura150_page-0001.jpg
+    - images/mapas/Figura151/Figura151_page-0001.jpg
+    - images/mapas/Figura152/Figura152_page-0001.jpg
+    - images/mapas/Figura153/Figura153_page-0001.jpg
+    - images/mapas/Figura154/Figura154_page-0001.jpg
+    - images/mapas/Figura155/Figura155_page-0001.jpg
+    - images/mapas/Figura156/Figura156_page-0001.jpg
+    - images/mapas/Figura157/Figura157_page-0001.jpg
+    - images/mapas/Figura158/Figura158_page-0001.jpg
+    - images/mapas/Figura159/Figura159_page-0001.jpg
+    - images/mapas/Figura160/Figura160_page-0001.jpg
+    - images/mapas/Figura161/Figura161_page-0001.jpg
+    - images/mapas/Figura162/Figura162_page-0001.jpg
+    - images/mapas/Figura163/Figura163_page-0001.jpg
+    - images/mapas/Figura164/Figura164_page-0001.jpg
+    - images/mapas/Figura165/Figura165_page-0001.jpg
+    - images/mapas/Figura166/Figura166_page-0001.jpg
+    - images/mapas/Figura167/Figura167_page-0001.jpg
+    - images/mapas/Figura168/Figura168_page-0001.jpg
+    - images/mapas/Figura169/Figura169_page-0001.jpg
+    - images/mapas/Figura170/Figura170_page-0001.jpg
+    - images/mapas/Figura171/Figura171_page-0001.jpg
+    - images/mapas/Figura172/Figura172_page-0001.jpg
+    - images/mapas/Figura173/Figura173_page-0001.jpg
+    - images/mapas/Figura174/Figura174_page-0001.jpg
+    - images/mapas/Figura175/Figura175_page-0001.jpg
+    - images/mapas/Figura176/Figura176_page-0001.jpg
+    - images/mapas/Figura177/Figura177_page-0001.jpg
+    - images/mapas/Figura178/Figura178_page-0001.jpg
+    - images/mapas/Figura179/Figura179_page-0001.jpg
+    - images/mapas/Figura180/Figura180_page-0001.jpg
+    - images/mapas/Figura181/Figura181_page-0001.jpg
+    - images/mapas/Figura182/Figura182_page-0001.jpg
+    - images/mapas/Figura183/Figura183_page-0001.jpg
+    - images/mapas/Figura184/Figura184_page-0001.jpg
+    - images/mapas/Figura185/Figura185_page-0001.jpg
+    - images/mapas/Figura186/Figura186_page-0001.jpg
+    - images/mapas/Figura187/Figura187_page-0001.jpg
+    - images/mapas/Figura188/Figura188_page-0001.jpg
+
+
+
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
